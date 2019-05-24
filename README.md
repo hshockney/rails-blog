@@ -1,7 +1,17 @@
 # README
+> This is a Ruby on Rails application that allows users to create their own portfolio.
+### Features
+- Real time chat engine for comments
+- Blog
+- Portfolio
+- Drag and drop interface
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Code Example
+``` ruby
+def my_great_method
+    puts "here it is"
+end
+```
 
 Things you may want to cover:
 
