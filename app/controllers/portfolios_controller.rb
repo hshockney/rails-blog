@@ -2,11 +2,18 @@ class PortfoliosController < ApplicationController
     def index
         @portfolio_items = Portfolio.all
     end
+    
+    def angular
+        @angular_portfolio_items = Portfolio.angular
+    end
+    
     def new
         @portfolio_item = Portfolio.new
+        3.times { @portfolio_item.technologies.build }
     end
+    
     def create
-    @portfolio_item = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body))
+    @portfolio_item = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body, technologies_attributes: [:name]))
 
     respond_to do |format|
       if @portfolio_item.save
@@ -16,9 +23,11 @@ class PortfoliosController < ApplicationController
       end
     end
   end
+
 def edit
     @portfolio_item = Portfolio.find(params[:id])
 end
+
  def update
      @portfolio_item = Portfolio.find(params[:id])
     respond_to do |format|
@@ -29,9 +38,11 @@ end
       end
     end
   end
+
 def show
   @portfolio_item = Portfolio.find(params[:id])  
 end
+
 def destroy
     #Performs lookup
     @portfolio_item = Portfolio.find(params[:id])
