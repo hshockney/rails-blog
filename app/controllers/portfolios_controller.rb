@@ -19,7 +19,7 @@ class PortfoliosController < ApplicationController
     
     def new
         @portfolio_item = Portfolio.new
-        3.times { @portfolio_item.technologies.build }
+        
     end
     
     def create
@@ -40,7 +40,7 @@ end
  def update
     respond_to do |format|
       if @portfolio_item.update(portfolio_params)
-        format.html { redirect_to portfolio_path, notice: 'Item was successfully updated.' }
+        format.html { redirect_to portfolios_path, notice: 'Item was successfully updated.' }
       else
         format.html { render :edit }
       end
@@ -70,7 +70,7 @@ def portfolio_params
                                       :body,
                                       :main_image,
                                       :thumb_image,
-                                      technologies_attributes: [:name]
+                                      technologies_attributes: [:id, :name, :_destroy]
                                       
                                       )
 end
