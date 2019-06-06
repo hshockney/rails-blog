@@ -58,9 +58,10 @@ body {
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: 700;
-  color: rgba(255, 255, 255, .5);
+  color: rgba(255, 255, 255, .7);
   background-color: transparent;
   border-bottom: .25rem solid transparent;
+  text-shadow: 0 0.09rem 0.1rem rgba(0, 0, 0, 0.5);
 }
 
 .nav-masthead .nav-link:hover,
@@ -122,8 +123,8 @@ body {
     float:none;
 }
 .app-nav span {
-    margin-left:15px;
-    margin-right:15px;
+    margin-left:10px;
+    margin-right:10px;
 }
 .about-image {
     width:250px;
@@ -142,6 +143,20 @@ body {
     background: image-url('cover.jpg') no-repeat;
     background-size: cover;
 }
+
+.font-color {
+    color: #17a2b8;
+}
+.font-shadow {
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+}
 .app-footer {
-    color:#fff;
+    color: rgba(255, 255, 255, 0.2);
+    text-shadow: 0 0.09rem 0.1rem rgba(0, 0, 0, 0.7);
+}
+.app-brand {
+    margin-left:10px;
+}
+.app-nav {
+    margin-right:10px;
 }
