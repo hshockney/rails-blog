@@ -41,8 +41,10 @@ body {
 }
 
 .cover-container {
-  max-width: 55rem;
+  margin-right: auto;
+  margin-left: auto;
 }
+
 
 
 /*
@@ -107,6 +109,31 @@ body {
 .mastfoot {
   color: rgba(255, 255, 255, .5);
 }
+@media (min-width: 40em) {
+  /* Pull out the header and footer */
+//  .masthead {
+//    position: fixed;
+//    top: 0;
+//  }
+//  .mastfoot {
+//    position: fixed;
+//    bottom: 0;
+//  }
+  
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 62em) {
+  .cover-container {
+    width: 65rem;
+  }
+}
+
 //#Custom Styles
 .card-body {
     color:black;
@@ -151,6 +178,9 @@ body {
 .font-shadow {
     text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
 }
+.font-shadow-about {
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.9);
+}
 .app-footer {
     color: rgba(255, 255, 255, 0.2);
     text-shadow: 0 0.09rem 0.1rem rgba(0, 0, 0, 0.7);
@@ -163,8 +193,16 @@ body {
 }
 .tech-news {
     color: rgba(255, 255, 255, 0);
+    margin: 20px;
 }
 .tech-news a {
     color: #17a2b8;
     text-decoration: underline;
+}
+.tech-news > .card {
+    padding: 30px;
+}
+.about-me-div > .card {
+    color: rgba(255, 255, 255, 0);
+    
 }
