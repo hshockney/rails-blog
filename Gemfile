@@ -71,3 +71,5 @@ gem 'gritter', '~> 1.2'
 gem 'twitter', '~> 6.2'
 gem "aws-sdk-s3", require: false
 gem 'redis', '~> 4.1', '>= 4.1.2'
+gem 'redcarpet', '~> 3.4'
+gem 'coderay', '~> 1.1', '>= 1.1.2'
