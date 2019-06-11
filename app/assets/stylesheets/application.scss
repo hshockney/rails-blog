@@ -206,3 +206,10 @@ body {
     color: rgba(255, 255, 255, 0);
     
 }
+.fa-navicon {
+    color: #fff;
+    outline:none;
+}
+.fa-navicon:focus {
+    outline: 0 !important;
+}
