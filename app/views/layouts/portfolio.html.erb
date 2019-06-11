@@ -14,6 +14,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+
   <body>
     <!-- Start of navbar -->
     <%= render "shared/portfolio_nav" %>
@@ -23,7 +24,7 @@
     <!-- End of Masthead -->
     <%= yield %>
     <%= alerts %>
-    <%= source_helper("portfolio") %>
+    
     
     <!-- Start of Footer -->
     <%= render "shared/portfolio_footer" %>
