@@ -155,7 +155,8 @@ body {
     margin-right:10px;
 }
 .about-image {
-    width:250px;
+    width: 378px;
+    max-width: 100%;
 }
 #background {
     position:fixed;
@@ -168,7 +169,7 @@ body {
     z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: image-url('cover.jpg') no-repeat;
+    background: image-url('') no-repeat;
     background-size: cover;
 }
 
@@ -212,4 +213,25 @@ body {
 }
 .fa-navicon:focus {
     outline: 0 !important;
+}
+.app-card-container {
+    color: black;
+    text-align: left;
+}
+.contact-card-container {
+    color: #17a2b8;
+    text-align: left;
+}
+.contact-card-container a {
+    color: rgba(255, 255, 255, 0.2);
+}
+.contact-details {
+    margin-bottom:20px!important;
+}
+.linkedin-badge {
+    margin: 0 auto;
+    margin-bottom:20px;
+}
+.opacity-card {
+    opacity: .9;
 }
