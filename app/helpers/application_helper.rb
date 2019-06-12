@@ -12,7 +12,7 @@ module ApplicationHelper
     
     def source_helper(styles)
        if session[:source] 
-           greeting= "Thanks for visiting me from #{session[:source].capitalize}, please feel free to  #{ link_to 'Contact Me', contact_path }  if you'd like to work together."
+           greeting= "Thanks for visiting me from #{session[:source].capitalize}, please feel free to &nbsp;&nbsp; #{ link_to 'Contact Me', contact_path }&nbsp;&nbsp; if you'd like to work together."
            content_tag(:div, greeting.html_safe, class: styles)
         end
     end
