@@ -1,8 +1,8 @@
-<div class="">
+<div class="mt-5">
     <div class="container">
         <h1 class="blog-title font-color">Heather's Ramblings</h1>
         <p class="lead blog-description">A look at being a woman in tech</p>
-        <span><%= link_to 'Create a New Blog Post', new_blog_path if logged_in?(:site_admin) %></span>
+        <span><%= link_to 'Create a New Blog Post', new_blog_path if logged_in?(:site_admin) %></span> / 
         <span><%= link_to 'Topics', topics_path %></span>
     </div>
 </div>
