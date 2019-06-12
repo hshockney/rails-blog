@@ -27,9 +27,11 @@ a:hover {
  * Base structure
  */
 
-html,
-body {
+html{
   height: 100%;
+}
+body {
+  min-height: 100%;
 }
 
 body {
@@ -234,4 +236,8 @@ body {
 }
 .opacity-card {
     opacity: .9;
+}
+.card-body {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
