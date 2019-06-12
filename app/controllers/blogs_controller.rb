@@ -91,7 +91,7 @@ end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_params
-      params.require(:blog).permit(:title, :body, :topic_id, :status)
+      params.require(:blog).permit(:title, :body, :topic_id, :status1)
     end
     def set_side_bar_topics
         @side_bar_topics = Topic.with_blogs
