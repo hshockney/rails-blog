@@ -4,16 +4,13 @@ module PortfoliosHelper
     end
     def portfolio_img img, type
        if img.model.main_image? || img.model.thumb_image?
-#           puts"img is #{img}"
-#           img
-           image_generator(height: '350', width: '200')
+          img.to_s
        elsif type == 'thumb'
-#           puts"in thumb"
            image_generator(height: '350', width: '200')
        elsif type == 'main'
-#           puts" in main"
            image_generator(height:'600', width: '400')
        end
+
     end
     class CodeRayify < Redcarpet::Render::HTML
         def block_code(code, language)
