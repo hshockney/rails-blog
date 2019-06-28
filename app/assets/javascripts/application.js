@@ -20,8 +20,8 @@
 //= require cocoon
 //= require gritter
 //= require lib/typed
-//= require typed-implementation
 //= require cable
+//= require typed-implementation
 //= require turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
