@@ -9,6 +9,6 @@ ready = ->
     typeSpeed: 50
   return
 
-#$(document).ready ready
+$(document).ready
 $(document).on 'turbolinks:load', ready
   
