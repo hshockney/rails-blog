@@ -237,6 +237,7 @@ select {
 }
 .contact-card-container a {
     color: rgba(255, 255, 255, 0.2);
+    outline:none;
 }
 .contact-details {
     margin-bottom:20px!important;
@@ -255,4 +256,8 @@ select {
 .skill {
     margin-top: 10px;
     margin-bottom: 10px; 
+}
+.link-contact:focus,.link-contact:hover {
+    color:rgb(23, 162, 184);
+    outline:none;
 }
