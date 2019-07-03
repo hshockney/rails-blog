@@ -31,7 +31,7 @@
                 <p class="font-shadow-about"><em>Speaker at technical conferences</em> domestically and internationally, including UX Tools for Developers workshop at BuildStuff Lithuania, UX for the Full Stack Developer at FullStack NYC, and UX Tools for Developers at Abstractions II Pittsburgh, PA.</p>
                 <p>
                     <button
-                    class="btn btn-primary"
+                    class="btn btn-primary mt-3"
                     type="button"
                     data-toggle="collapse"
                     data-target="#jobHistory"
@@ -41,7 +41,7 @@
                     Job History
                     </button>
                     <button
-                    class="btn btn-primary"
+                    class="btn btn-primary mt-3"
                     type="button"
                     data-toggle="collapse"
                     data-target="#courses"
@@ -49,6 +49,16 @@
                     aria-controls="courses"
                     >
                     Courses
+                    </button>
+                    <button
+                    class="btn btn-primary mt-3"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#resume"
+                    aria-expanded="false"
+                    aria-controls="resume"
+                    >
+                    Resume
                     </button>
                 </p>
                 <p>
@@ -75,8 +85,21 @@
                         </div>
                     </div>
                 </p>
+                <p>
+                    <div class="collapse" id="resume">
+                        <div class="card card-body">
+                           <p class="font-shadow-about">Here is my current resume. Happy to answer any questions you may have, just <%= link_to "Contact Me", contact_path, class: "font-color"%>.</p>
+                            <%= link_to "View Resume", "https://portfoliohs.s3.amazonaws.com/pdf/HeatherShockneyResumeSinglePage2019.pdf", :target => "_blank", class: "font-color"%>
+                        </div>
+                    </div>
+                </p>
             </div>
         </div>
     </div>
 </div>
 <span class="element" id="typedJs" style="display:none;"></span> 
+<style>
+    .typed-cursor {
+      display: none;
+    }  
+  </style>
