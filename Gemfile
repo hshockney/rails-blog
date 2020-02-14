@@ -55,7 +55,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.2.4' 
-gem 'devise', '~> 4.2'
+gem "devise", ">= 4.7.1"
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.3.1'
 gem 'hshockney_view_tool', '~> 0.1.1'
@@ -65,7 +65,7 @@ gem 'kaminari', '~> 1.1', '>= 1.1.1'
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.2'
 gem 'carrierwave-aws', '~> 1.3'
-gem 'mini_magick', '~> 4.9', '>= 4.9.3'
+gem 'mini_magick', '~> 4.9', '>= 4.9.4'
 gem 'cocoon', '~> 1.2', '>= 1.2.12'
 gem 'gritter', '~> 1.2'
 gem 'twitter', '~> 6.2'
